@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "Naver TV Click all Like Buttons",
+  "description": "I can auto click all like buttons on message areas.",
+  "version": "2.0",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Click all Like Buttons!"
+  },
+  "permissions": ["tabs", "activeTab", "https://tv.naver.com/*"]
+}

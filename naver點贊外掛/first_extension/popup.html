@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Naver TV Click all Like Buttons</title>
+    <style type="text/css">
+      body {
+        margin: 2rem;
+        text-align: center;
+        white-space: nowrap;
+      }
+
+      h1 {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+      }
+
+      h1 span {
+        font-size: 24px;
+        color: #000;
+      }
+
+      input {
+        display: block;
+        width: 80%;
+        text-align: center;
+        font-size: 1em;
+        outline: 0;
+        border: 1px solid #ddd;
+        border-radius: 1em;
+        line-height: 2em;
+        padding: 0 1em;
+        margin: 0 auto 1em auto;
+      }
+
+      #container {
+        text-align: center;
+      }
+      button {
+        cursor: pointer;
+        font-size: 18px;
+        outline: 0;
+        font-weight: bold;
+        color: #fff;
+        border: none;
+        border-radius: 1em;
+        line-height: 2em;
+        padding: 0 1em;
+        margin: 0 0.5em;
+      }
+      button:disabled {
+        cursor: auto;
+        opacity: 0.3;
+      }
+      .start {
+        background: #f44e66;
+      }
+      .stop {
+        background: #666;
+      }
+    </style>
+
+    <script src="naver_click.js"></script>
+  </head>
+
+  <body>
+    <a href="https://tv.naver.com/" target="_blank">
+      <img src="naver_tv_logo.svg" alt="" />
+    </a>
+    <h1>Click all Like Buttons</h1>
+    <input type="text" placeholder="keywords" id="keywords" />
+    <div id="container">
+      <button class="start" id="startClickAll">START</button>
+      <button class="stop" id="stopClickAll">STOP</button>
+    </div>
+  </body>
+</html>

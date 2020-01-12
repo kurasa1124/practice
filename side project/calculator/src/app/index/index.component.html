@@ -1,0 +1,33 @@
+<table>
+  <tr>
+    <th colspan="4">{{ view }}</th>
+  </tr>
+  <tr>
+    <td (click)="tmp.push('7')">7</td>
+    <td (click)="tmp.push('8')">8</td>
+    <td (click)="tmp.push('9')">9</td>
+    <td (click)="tmp.pop()">←</td>
+  </tr>
+  <tr>
+    <td (click)="tmp.push('4')">4</td>
+    <td (click)="tmp.push('5')">5</td>
+    <td (click)="tmp.push('6')">6</td>
+    <td (click)="tmp.push('x')">x</td>
+  </tr>
+  <tr>
+    <td (click)="tmp.push('1')">1</td>
+    <td (click)="tmp.push('2')">2</td>
+    <td (click)="tmp.push('3')">3</td>
+    <td (click)="tmp.push('/')">/</td>
+  </tr>
+  <tr>
+    <td (click)="tmp.push('0')">0</td>
+    <td (click)="tmp.includes('.') ? null : tmp.push('.')">.</td>
+    <td (click)="tmp = []">AC</td>
+    <td (click)="tmp.push('-')">-</td>
+  </tr>
+  <tr>
+    <td class="count" colspan="3" (click)="equal()">=</td>
+    <td (click)="tmp.push('+')">+</td>
+  </tr>
+</table>
